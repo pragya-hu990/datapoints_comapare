@@ -1,0 +1,15 @@
+__pycache__/
+*.py
+*.log
+*.pyc
+.DS_Store
+node_modules/
+.git/
+rebit-schemas/
+finfactor/
+postman.json
+*.md
+!README.md
+vercel.json
+.vercel/
+
