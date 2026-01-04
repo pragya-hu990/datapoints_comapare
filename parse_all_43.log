@@ -1,0 +1,403 @@
+================================================================================
+🎯 COMPLETE PARSER - ALL 43 APIs
+================================================================================
+
+📖 STEP 1: Parsing ReBIT Schemas...
+✅ Parsed 23 ReBIT FI types
+
+📡 STEP 2: Parsing ALL 43 FinFactor APIs...
+📖 Reading API response file: /Users/pragyatripathi/Desktop/untitled folder/dataPointsCompare/finfactor/apiResonse.json
+   File size: 14.8 MB
+
+🔍 Found 29 API responses
+
+  📡 User Login
+     Endpoint: /pfm/api/v2/user-login
+     Category: user_management
+     ✅ Extracted 1 fields
+
+  📡 User Details
+     Endpoint: /pfm/api/v2/user-details
+     Category: user_management
+     ✅ Extracted 47 fields
+
+  📡 User Account Delink
+     Endpoint: /pfm/api/v2/user-account-delink
+     Category: other
+     ✅ Extracted 3 fields
+
+  📡 Submit Consent Request Plus
+     Endpoint: /pfm/api/v2/submit-consent-request-plus
+     Category: consent_management
+     ✅ Extracted 5 fields
+
+  📡 Submit Consent Request V1
+     Endpoint: /pfm/api/v1/submit-consent-request
+     Category: consent_management
+     ✅ Extracted 12 fields
+
+  📡 FI Request User
+     Endpoint: /pfm/api/v2/firequest-user
+     Category: fi_request
+     ✅ Extracted 3 fields
+
+  📡 User Subscriptions
+     Endpoint: /pfm/api/v2/user-subscriptions
+     Category: user_management
+     ✅ Extracted 3 fields
+
+  📡 Deposit Linked Accounts
+     Endpoint: /pfm/api/v2/deposit/user-linked-accounts
+     Category: deposit
+     ✅ Extracted 43 fields
+
+  📡 Deposit User Details
+     Endpoint: /pfm/api/v2/deposit/user-details
+     Category: deposit
+     ✅ Extracted 9 fields
+
+  📡 Deposit Insights
+     Endpoint: /pfm/api/v2/deposit/insights
+     Category: deposit
+     ✅ Extracted 25 fields
+
+  📡 Term Deposit Linked Accounts
+     Endpoint: /pfm/api/v2/term-deposit/user-linked-accounts
+     Category: term_deposit
+     ✅ Extracted 47 fields
+
+  📡 Term Deposit User Details
+     Endpoint: /pfm/api/v2/term-deposit/user-details
+     Category: term_deposit
+     ✅ Extracted 9 fields
+
+  📡 Recurring Deposit Linked Accounts
+     Endpoint: /pfm/api/v2/recurring-deposit/user-linked-accounts
+     Category: recurring_deposit
+     ✅ Extracted 49 fields
+
+  📡 Recurring Deposit User Details
+     Endpoint: /pfm/api/v2/recurring-deposit/user-details
+     Category: recurring_deposit
+     ✅ Extracted 9 fields
+
+  📡 Mutual Fund Linked Accounts
+     Endpoint: /pfm/api/v2/mutual-fund/user-linked-accounts
+     Category: mutual_funds
+     ✅ Extracted 40 fields
+
+  📡 Mutual Fund Holding Folio
+     Endpoint: /pfm/api/v2/mutual-fund/user-linked-accounts/holding-folio
+     Category: mutual_funds
+     ✅ Extracted 57 fields
+
+  📡 Mutual Fund User Details
+     Endpoint: /pfm/api/v2/mutual-fund/user-details
+     Category: mutual_funds
+     ✅ Extracted 14 fields
+
+  📡 Mutual Fund Insights
+     Endpoint: /pfm/api/v2/mutual-fund/insights
+     Category: mutual_funds
+     ✅ Extracted 83 fields
+
+  📡 Mutual Fund Analysis
+     Endpoint: /pfm/api/v2/mutual-fund/analysis
+     Category: mutual_funds
+     ✅ Extracted 12 fields
+
+  📡 ETF Linked Accounts
+     Endpoint: /pfm/api/v2/etf/user-linked-accounts
+     Category: exchange_traded_funds
+     ✅ Extracted 39 fields
+
+  📡 ETF Insights
+     Endpoint: /pfm/api/v2/etf/insights
+     Category: exchange_traded_funds
+     ✅ Extracted 32 fields
+
+  📡 ETF Account Statement
+     Endpoint: /pfm/api/v2/etf/user-account-statement
+     Category: exchange_traded_funds
+     ✅ Extracted 14 fields
+
+  📡 Equities Linked Accounts
+     Endpoint: /pfm/api/v2/equities/user-linked-accounts
+     Category: equity_shares
+     ✅ Extracted 39 fields
+
+  📡 Equities Holding Broker
+     Endpoint: /pfm/api/v2/equities/user-linked-accounts/holding-broker
+     Category: equity_shares
+     ✅ Extracted 45 fields
+
+  📡 Equities Demat Holding
+     Endpoint: /pfm/api/v2/equities/user-linked-accounts/demat-holding
+     Category: equity_shares
+     ✅ Extracted 43 fields
+
+  📡 Equities Broker Holding
+     Endpoint: /pfm/api/v2/equities/user-linked-accounts/broker-holding
+     Category: equity_shares
+     ✅ Extracted 42 fields
+
+  📡 Equities User Details
+     Endpoint: /pfm/api/v2/equities/user-details
+     Category: equity_shares
+     ✅ Extracted 11 fields
+
+  📡 Equities and ETFs Demat Holding
+     Endpoint: /pfm/api/v2/equities-and-etfs/user-linked-accounts/demat-holding
+     Category: equity_shares
+     ✅ Extracted 43 fields
+
+  📡 NPS Linked Accounts
+     Endpoint: /pfm/api/v2/nps/user-linked-accounts
+     Category: national_pension_system
+     ✅ Extracted 32 fields
+
+✅ Parsed 29 APIs
+✅ Categorized into 11 categories
+
+📊 APIs by Category:
+   consent_management: 2 APIs, 16 unique fields
+   deposit: 3 APIs, 62 unique fields
+   equity_shares: 6 APIs, 65 unique fields
+   exchange_traded_funds: 3 APIs, 67 unique fields
+   fi_request: 1 APIs, 3 unique fields
+   mutual_funds: 5 APIs, 112 unique fields
+   national_pension_system: 1 APIs, 27 unique fields
+   other: 1 APIs, 3 unique fields
+   recurring_deposit: 2 APIs, 50 unique fields
+   term_deposit: 2 APIs, 48 unique fields
+   user_management: 3 APIs, 26 unique fields
+
+🔬 STEP 3: Creating Complete Comparison...
+
+✅ Saved to: /Users/pragyatripathi/Desktop/untitled folder/dataPointsCompare/comparison_all_43_apis.json
+
+================================================================================
+📊 COMPLETE COMPARISON - ALL 43 APIs
+================================================================================
+
+Total APIs Parsed: 29
+
+📁 ALTERNATIVE INVESTMENT FUNDS
+   APIs: 0
+   ReBIT: 42 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 42
+   FinFactor Extra: 0 ⭐
+
+📁 BONDS
+   APIs: 0
+   ReBIT: 53 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 53
+   FinFactor Extra: 0 ⭐
+
+📁 CERTIFICATES OF DEPOSIT
+   APIs: 0
+   ReBIT: 43 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 43
+   FinFactor Extra: 0 ⭐
+
+📁 COLLECTIVE INVESTMENT SCHEMES
+   APIs: 0
+   ReBIT: 36 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 36
+   FinFactor Extra: 0 ⭐
+
+📁 COMMERCIAL PAPER
+   APIs: 0
+   ReBIT: 42 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 42
+   FinFactor Extra: 0 ⭐
+
+📁 CONSENT MANAGEMENT
+   APIs: 2
+   ReBIT: 0 fields
+   FinFactor: 16 fields
+   Common: 0 (0%)
+   ReBIT Only: 0
+   FinFactor Extra: 16 ⭐
+
+📁 CREDIT CARD
+   APIs: 0
+   ReBIT: 38 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 38
+   FinFactor Extra: 0 ⭐
+
+📁 DEBENTURES
+   APIs: 0
+   ReBIT: 45 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 45
+   FinFactor Extra: 0 ⭐
+
+📁 DEPOSIT
+   APIs: 3
+   ReBIT: 35 fields
+   FinFactor: 62 fields
+   Common: 2 (5.7%)
+   ReBIT Only: 33
+   FinFactor Extra: 60 ⭐
+
+📁 EMPLOYEE PROVIDENT FUND
+   APIs: 0
+   ReBIT: 31 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 31
+   FinFactor Extra: 0 ⭐
+
+📁 EQUITY SHARES
+   APIs: 6
+   ReBIT: 41 fields
+   FinFactor: 65 fields
+   Common: 7 (17.1%)
+   ReBIT Only: 34
+   FinFactor Extra: 58 ⭐
+
+📁 EXCHANGE TRADED FUNDS
+   APIs: 3
+   ReBIT: 36 fields
+   FinFactor: 67 fields
+   Common: 12 (33.3%)
+   ReBIT Only: 24
+   FinFactor Extra: 55 ⭐
+
+📁 FI REQUEST
+   APIs: 1
+   ReBIT: 0 fields
+   FinFactor: 3 fields
+   Common: 0 (0%)
+   ReBIT Only: 0
+   FinFactor Extra: 3 ⭐
+
+📁 GOVERNMENT SECURITIES
+   APIs: 0
+   ReBIT: 54 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 54
+   FinFactor Extra: 0 ⭐
+
+📁 INDIAN DEPOSITORY RECEIPTS
+   APIs: 0
+   ReBIT: 37 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 37
+   FinFactor Extra: 0 ⭐
+
+📁 INFRASTRUCTURE INVESTMENT TRUSTS
+   APIs: 0
+   ReBIT: 36 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 36
+   FinFactor Extra: 0 ⭐
+
+📁 INSURANCE POLICIES
+   APIs: 0
+   ReBIT: 47 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 47
+   FinFactor Extra: 0 ⭐
+
+📁 MUTUAL FUNDS
+   APIs: 5
+   ReBIT: 47 fields
+   FinFactor: 112 fields
+   Common: 19 (40.4%)
+   ReBIT Only: 28
+   FinFactor Extra: 93 ⭐
+
+📁 NATIONAL PENSION SYSTEM
+   APIs: 1
+   ReBIT: 49 fields
+   FinFactor: 27 fields
+   Common: 1 (2.0%)
+   ReBIT Only: 48
+   FinFactor Extra: 26 ⭐
+
+📁 OTHER
+   APIs: 1
+   ReBIT: 0 fields
+   FinFactor: 3 fields
+   Common: 0 (0%)
+   ReBIT Only: 0
+   FinFactor Extra: 3 ⭐
+
+📁 PUBLIC PROVIDENT FUND
+   APIs: 0
+   ReBIT: 28 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 28
+   FinFactor Extra: 0 ⭐
+
+📁 REAL ESTATE INVESTMENT TRUSTS
+   APIs: 0
+   ReBIT: 38 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 38
+   FinFactor Extra: 0 ⭐
+
+📁 RECURRING DEPOSIT
+   APIs: 2
+   ReBIT: 43 fields
+   FinFactor: 50 fields
+   Common: 3 (7.0%)
+   ReBIT Only: 40
+   FinFactor Extra: 47 ⭐
+
+📁 SYSTEMATIC INVESTMENT PLAN
+   APIs: 0
+   ReBIT: 49 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 49
+   FinFactor Extra: 0 ⭐
+
+📁 TERM DEPOSIT
+   APIs: 2
+   ReBIT: 41 fields
+   FinFactor: 48 fields
+   Common: 3 (7.3%)
+   ReBIT Only: 38
+   FinFactor Extra: 45 ⭐
+
+📁 UNIT LINKED INSURANCE PLAN
+   APIs: 0
+   ReBIT: 45 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 45
+   FinFactor Extra: 0 ⭐
+
+📁 USER MANAGEMENT
+   APIs: 3
+   ReBIT: 0 fields
+   FinFactor: 26 fields
+   Common: 0 (0%)
+   ReBIT Only: 0
+   FinFactor Extra: 26 ⭐
+
+================================================================================
+✅ DONE - All 43 APIs parsed!
+================================================================================

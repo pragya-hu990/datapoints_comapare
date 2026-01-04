@@ -1,0 +1,162 @@
+{
+  "field_mappings": {
+    "account_identifiers": {
+      "maskedAccNumber": ["maskedAccountNumber", "accountNumber", "masked_account_number", "accNumber", "accNo", "account_no"],
+      "linkedAccRef": ["linkedAccountRef", "accountRefNumber", "accountRef", "linked_account_ref", "accRef", "accountReference"],
+      "accountRefNumber": ["linkedAccRef", "linkedAccountRef", "accountRef", "accRefNo"],
+      "fiDataId": ["fi_data_id", "fiId", "financialInstrumentId"]
+    },
+    "holder_information": {
+      "name": ["holderName", "accountHolderName", "accountName", "customerName", "userName"],
+      "dob": ["dateOfBirth", "birthDate", "date_of_birth", "DOB", "birth_date"],
+      "mobile": ["mobileNumber", "phoneNumber", "contactNumber", "phone", "contact", "mobileNo"],
+      "email": ["emailId", "emailAddress", "email_address", "mail"],
+      "pan": ["panNumber", "panCard", "pan_number", "PAN"],
+      "address": ["holderAddress", "accountAddress", "customerAddress", "addr"],
+      "nominee": ["nomineeName", "nomineeDetails"],
+      "landline": ["landlineNumber", "landline_number"]
+    },
+    "account_details": {
+      "currentBalance": ["balance", "availableBalance", "current_value", "currentValue", "presentValue"],
+      "balanceDateTime": ["balanceDate", "balanceTimestamp", "lastUpdated", "balance_date_time"],
+      "openingDate": ["accountOpeningDate", "openDate", "opening_date", "dateOfOpening"],
+      "maturityDate": ["maturity", "maturity_date", "dateOfMaturity", "maturity_dt"],
+      "maturityAmount": ["maturity_amount", "amountOnMaturity", "maturityValue"],
+      "currentValue": ["current_value", "marketValue", "presentValue", "currentMarketValue"],
+      "investmentValue": ["principalAmount", "investedAmount", "investment_value", "principal"],
+      "status": ["accountStatus", "status", "account_status"],
+      "accountType": ["type", "accType", "account_type"],
+      "branch": ["branchName", "branch_name", "branchCode"],
+      "ifsc": ["ifscCode", "ifsc_code", "IFSC"],
+      "micrCode": ["micr", "micr_code", "MICR"]
+    },
+    "transaction_fields": {
+      "txnId": ["transactionId", "transaction_id", "id", "txn_id"],
+      "amount": ["transactionAmount", "txnAmount", "transaction_amount", "amt"],
+      "transactionDateTime": ["transactionDate", "dateTime", "timestamp", "txnDate", "txnDateTime", "transaction_date_time"],
+      "valueDate": ["value_date", "effectiveDate", "value_dt"],
+      "type": ["transactionType", "txnType", "transaction_type"],
+      "mode": ["transactionMode", "txnMode", "paymentMode", "transaction_mode"],
+      "narration": ["description", "remarks", "note", "narrative", "txnDescription"],
+      "reference": ["referenceNumber", "refNumber", "ref", "reference_number", "txnRef"],
+      "currentDue": ["current_due", "dueAmount", "currentDueAmount"],
+      "totalDueAmount": ["total_due_amount", "totalDue", "amountDue"],
+      "minDueAmount": ["min_due_amount", "minimumDue", "minDue"]
+    },
+    "mutual_fund_specific": {
+      "folioNumber": ["folio", "folioNo", "folio_number", "folioNum"],
+      "schemeCode": ["scheme_code", "schemeId", "scheme_id"],
+      "schemeName": ["scheme_name", "fundName", "fund_name", "schemeName"],
+      "units": ["unitBalance", "units", "unit_balance", "noOfUnits"],
+      "nav": ["netAssetValue", "navValue", "net_asset_value", "NAV"],
+      "amc": ["amcName", "amc_name", "fundHouse", "assetManagementCompany"],
+      "isin": ["isinCode", "isin_code", "ISIN"]
+    },
+    "deposit_specific": {
+      "depositAmount": ["deposit_amount", "principalAmount", "depositValue"],
+      "interestRate": ["interest_rate", "rateOfInterest", "roi", "rate"],
+      "interestComputation": ["interest_computation", "interestCalculation"],
+      "tenure": ["tenureMonths", "tenure_months", "period", "tenureDays"],
+      "compoundingFrequency": ["compounding_frequency", "compoundingType"],
+      "interestPayout": ["interest_payout", "interestPayoutFrequency"]
+    },
+    "credit_card_specific": {
+      "cardType": ["card_type", "typeOfCard"],
+      "maskedCardNumber": ["masked_card_number", "cardNumber"],
+      "creditLimit": ["credit_limit", "totalCreditLimit"],
+      "availableCredit": ["available_credit", "availableCreditLimit"],
+      "cashLimit": ["cash_limit", "cashCreditLimit"],
+      "dueDate": ["due_date", "paymentDueDate"],
+      "lastStatementDate": ["last_statement_date", "statementDate"],
+      "loyaltyPoints": ["loyalty_points", "rewardPoints", "points"]
+    },
+    "equity_etf_specific": {
+      "isin": ["isinCode", "isin_code", "ISIN"],
+      "quantity": ["qty", "units", "noOfShares", "shareQuantity"],
+      "averagePrice": ["average_price", "avgPrice", "avgCost"],
+      "ltp": ["lastTradedPrice", "last_traded_price", "currentPrice"],
+      "pnl": ["profitAndLoss", "profit_and_loss", "gainLoss"],
+      "exchange": ["exchangeName", "exchange_name", "stockExchange"]
+    },
+    "fip_data": {
+      "fipId": ["fip_id", "fipCode", "financialInformationProviderId"],
+      "fipName": ["fip_name", "providerName", "financialInformationProvider"],
+      "dataFetched": ["data_fetched", "isFetched", "fetchStatus"],
+      "lastFetchDateTime": ["last_fetch_date_time", "lastFetchDate", "fetchedAt"]
+    },
+    "consent_fields": {
+      "consentId": ["consent_id", "consentHandle"],
+      "consentStatus": ["consent_status", "status"],
+      "consentExpiryTime": ["consent_expiry_time", "expiryTime", "expiresAt"],
+      "consentPurposeText": ["consent_purpose_text", "purpose", "consentPurpose"]
+    },
+    "common_metadata": {
+      "version": ["schemaVersion", "version", "ver"],
+      "lastUpdated": ["last_updated", "updatedAt", "lastModified"],
+      "createdAt": ["created_at", "creationDate"],
+      "uniqueIdentifier": ["unique_identifier", "userId", "customerId"]
+    }
+  },
+  "semantic_equivalents": {
+    "same_meaning_different_names": [
+      ["maskedAccNumber", "maskedAccountNumber", "accountNumber"],
+      ["dob", "dateOfBirth", "birthDate"],
+      ["mobile", "mobileNumber", "phoneNumber"],
+      ["currentBalance", "balance", "availableBalance"],
+      ["txnId", "transactionId"],
+      ["amount", "transactionAmount"],
+      ["folioNumber", "folio"],
+      ["nav", "netAssetValue"],
+      ["isin", "isinCode"],
+      ["fipId", "fip_id"],
+      ["fipName", "fip_name"]
+    ]
+  },
+  "abbreviation_expansions": {
+    "txn": "transaction",
+    "acc": "account",
+    "amt": "amount",
+    "ref": "reference",
+    "num": "number",
+    "dt": "date",
+    "dob": "dateOfBirth",
+    "pan": "permanentAccountNumber",
+    "ifsc": "indianFinancialSystemCode",
+    "micr": "magneticInkCharacterRecognition",
+    "nav": "netAssetValue",
+    "amc": "assetManagementCompany",
+    "roi": "rateOfInterest",
+    "pnl": "profitAndLoss",
+    "ltp": "lastTradedPrice",
+    "fip": "financialInformationProvider",
+    "fiu": "financialInformationUser"
+  },
+  "context_aware_mappings": {
+    "type": {
+      "transaction_context": ["transactionType", "txnType"],
+      "account_context": ["accountType", "accType"],
+      "card_context": ["cardType"],
+      "scheme_context": ["schemeType"]
+    },
+    "date": {
+      "transaction_context": ["transactionDate", "txnDate"],
+      "opening_context": ["openingDate", "accountOpeningDate"],
+      "maturity_context": ["maturityDate"],
+      "statement_context": ["statementDate"]
+    },
+    "value": {
+      "current_context": ["currentValue", "marketValue"],
+      "maturity_context": ["maturityValue", "maturityAmount"],
+      "investment_context": ["investmentValue", "principalAmount"]
+    }
+  },
+  "data_type_mappings": {
+    "string_types": ["string", "str", "text", "varchar"],
+    "integer_types": ["integer", "int", "long", "positiveInteger"],
+    "float_types": ["float", "double", "decimal", "number"],
+    "boolean_types": ["boolean", "bool"],
+    "date_types": ["date", "dateTime", "timestamp"],
+    "object_types": ["object", "dict", "map"],
+    "array_types": ["array", "list"]
+  }
+}

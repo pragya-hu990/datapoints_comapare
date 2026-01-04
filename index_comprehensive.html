@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReBIT vs FinFactor - Comprehensive Comparison</title>
+    <link rel="stylesheet" href="styles_comprehensive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>🎯 ReBIT vs FinFactor</h1>
+            <p class="subtitle">Comprehensive Field-by-Field Comparison with Source Tracking</p>
+        </div>
+    </header>
+
+    <!-- Summary Dashboard -->
+    <section class="summary-section">
+        <div class="container">
+            <h2>📊 Executive Summary</h2>
+            <div id="summaryCards" class="summary-grid"></div>
+        </div>
+    </section>
+
+    <!-- Controls -->
+    <section class="controls-section">
+        <div class="container">
+            <div class="controls-grid">
+                <div class="control-group">
+                    <label for="fiTypeSelect">Financial Instrument Type</label>
+                    <select id="fiTypeSelect" onchange="loadFiTypeData()">
+                        <option value="">Select FI Type...</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="viewMode">View Mode</label>
+                    <select id="viewMode" onchange="updateView()">
+                        <option value="all">All Fields</option>
+                        <option value="common">Common Fields Only</option>
+                        <option value="rebit_only">ReBIT Only</option>
+                        <option value="finn_only">FinFactor Only</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="searchField">Search Fields</label>
+                    <input type="text" id="searchField" placeholder="Search field names..." oninput="updateView()">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FI Type Details -->
+    <section class="details-section">
+        <div class="container">
+            <div id="fiTypeDetails" class="fi-details">
+                <div class="placeholder">
+                    <p>👆 Select a Financial Instrument Type to view detailed comparison</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison-section">
+        <div class="container">
+            <div id="comparisonContainer"></div>
+        </div>
+    </section>
+
+    <script src="app_comprehensive.js"></script>
+</body>
+
+</html>

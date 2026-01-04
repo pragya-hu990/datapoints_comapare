@@ -1,0 +1,353 @@
+================================================================================
+🎯 COMPREHENSIVE PARSER - ALL 50+ APIs
+================================================================================
+
+📖 STEP 1: Parsing ReBIT Schemas...
+✅ Parsed 23 ReBIT FI types
+   - alternative_investment_funds: 42 fields from 1 schemas
+   - bonds: 53 fields from 1 schemas
+   - certificates_of_deposit: 43 fields from 1 schemas
+   - collective_investment_schemes: 36 fields from 1 schemas
+   - commercial_paper: 42 fields from 1 schemas
+   - credit_card: 38 fields from 1 schemas
+   - debentures: 45 fields from 1 schemas
+   - deposit: 35 fields from 1 schemas
+   - employee_provident_fund: 31 fields from 1 schemas
+   - equity_shares: 41 fields from 1 schemas
+   - exchange_traded_funds: 36 fields from 1 schemas
+   - government_securities: 54 fields from 1 schemas
+   - indian_depository_receipts: 37 fields from 1 schemas
+   - infrastructure_investment_trusts: 36 fields from 1 schemas
+   - insurance_policies: 47 fields from 1 schemas
+   - mutual_funds: 47 fields from 1 schemas
+   - national_pension_system: 49 fields from 1 schemas
+   - public_provident_fund: 28 fields from 1 schemas
+   - real_estate_investment_trusts: 38 fields from 1 schemas
+   - recurring_deposit: 43 fields from 1 schemas
+   - systematic_investment_plan: 49 fields from 1 schemas
+   - term_deposit: 41 fields from 1 schemas
+   - unit_linked_insurance_plan: 45 fields from 1 schemas
+
+📡 STEP 2: Parsing ALL FinFactor APIs...
+📖 Reading API response file: /Users/pragyatripathi/Desktop/untitled folder/dataPointsCompare/finfactor/apiResonse.json
+   File size: 14.8 MB
+   Total characters: 15,473,075
+
+🔍 Found 29 API responses using regex
+
+  📡 Deposit Linked Accounts
+     Endpoint: /pfm/api/v2/deposit/user-linked-accounts
+     FI Type: deposit
+     ❌ Error: name 'true' is not defined
+
+  📡 Deposit User Details
+     Endpoint: /pfm/api/v2/deposit/user-details
+     FI Type: deposit
+     ✅ Extracted 9 fields
+
+  📡 Deposit Insights
+     Endpoint: /pfm/api/v2/deposit/insights
+     FI Type: deposit
+     ❌ Error: name 'false' is not defined
+
+  📡 Term Deposit Linked Accounts
+     Endpoint: /pfm/api/v2/term-deposit/user-linked-accounts
+     FI Type: term_deposit
+     ❌ Error: name 'true' is not defined
+
+  📡 Term Deposit User Details
+     Endpoint: /pfm/api/v2/term-deposit/user-details
+     FI Type: term_deposit
+     ✅ Extracted 9 fields
+
+  📡 Recurring Deposit Linked Accounts
+     Endpoint: /pfm/api/v2/recurring-deposit/user-linked-accounts
+     FI Type: recurring_deposit
+     ❌ Error: name 'true' is not defined
+
+  📡 Recurring Deposit User Details
+     Endpoint: /pfm/api/v2/recurring-deposit/user-details
+     FI Type: recurring_deposit
+     ✅ Extracted 9 fields
+
+  📡 Mutual Fund Linked Accounts
+     Endpoint: /pfm/api/v2/mutual-fund/user-linked-accounts
+     FI Type: mutual_funds
+     ❌ Error: name 'true' is not defined
+
+  📡 Mutual Fund Holding Folio
+     Endpoint: /pfm/api/v2/mutual-fund/user-linked-accounts/holding-folio
+     FI Type: mutual_funds
+     ✅ Extracted 57 fields
+
+  📡 Mutual Fund User Details
+     Endpoint: /pfm/api/v2/mutual-fund/user-details
+     FI Type: mutual_funds
+     ✅ Extracted 14 fields
+
+  📡 Mutual Fund Insights
+     Endpoint: /pfm/api/v2/mutual-fund/insights
+     FI Type: mutual_funds
+     ❌ Error: name 'null' is not defined
+
+  📡 Mutual Fund Analysis
+     Endpoint: /pfm/api/v2/mutual-fund/analysis
+     FI Type: mutual_funds
+     ✅ Extracted 12 fields
+
+  📡 ETF Linked Accounts
+     Endpoint: /pfm/api/v2/etf/user-linked-accounts
+     FI Type: exchange_traded_funds
+     ❌ Error: name 'true' is not defined
+
+  📡 ETF Insights
+     Endpoint: /pfm/api/v2/etf/insights
+     FI Type: exchange_traded_funds
+     ✅ Extracted 32 fields
+
+  📡 ETF Account Statement
+     Endpoint: /pfm/api/v2/etf/user-account-statement
+     FI Type: exchange_traded_funds
+     ✅ Extracted 14 fields
+
+  📡 Equities Linked Accounts
+     Endpoint: /pfm/api/v2/equities/user-linked-accounts
+     FI Type: equity_shares
+     ❌ Error: name 'true' is not defined
+
+  📡 Equities Holding Broker
+     Endpoint: /pfm/api/v2/equities/user-linked-accounts/holding-broker
+     FI Type: equity_shares
+     ❌ Error: name 'null' is not defined
+
+  📡 Equities Demat Holding
+     Endpoint: /pfm/api/v2/equities/user-linked-accounts/demat-holding
+     FI Type: equity_shares
+     ✅ Extracted 43 fields
+
+  📡 Equities Broker Holding
+     Endpoint: /pfm/api/v2/equities/user-linked-accounts/broker-holding
+     FI Type: equity_shares
+     ❌ Error: name 'null' is not defined
+
+  📡 Equities User Details
+     Endpoint: /pfm/api/v2/equities/user-details
+     FI Type: equity_shares
+     ✅ Extracted 11 fields
+
+  📡 Equities and ETFs Demat Holding
+     Endpoint: /pfm/api/v2/equities-and-etfs/user-linked-accounts/demat-holding
+     FI Type: equity_shares
+     ✅ Extracted 43 fields
+
+  📡 NPS Linked Accounts
+     Endpoint: /pfm/api/v2/nps/user-linked-accounts
+     FI Type: national_pension_system
+     ❌ Error: name 'true' is not defined
+
+✅ Extracted 6 FinFactor FI types
+   - deposit: 9 unique fields from 1 APIs
+   - equity_shares: 38 unique fields from 3 APIs
+   - exchange_traded_funds: 36 unique fields from 2 APIs
+   - mutual_funds: 46 unique fields from 3 APIs
+   - recurring_deposit: 9 unique fields from 1 APIs
+   - term_deposit: 9 unique fields from 1 APIs
+
+🔬 STEP 3: Creating Comprehensive Comparison...
+
+✅ Saved comprehensive comparison to: /Users/pragyatripathi/Desktop/untitled folder/dataPointsCompare/comparison_comprehensive.json
+
+================================================================================
+📊 COMPREHENSIVE COMPARISON SUMMARY
+================================================================================
+
+Total APIs Parsed: 11
+Total FI Types: 23
+
+📁 ALTERNATIVE INVESTMENT FUNDS
+   APIs: 0
+   ReBIT: 42 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 42
+   FinFactor Extra: 0 ⭐
+
+📁 BONDS
+   APIs: 0
+   ReBIT: 53 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 53
+   FinFactor Extra: 0 ⭐
+
+📁 CERTIFICATES OF DEPOSIT
+   APIs: 0
+   ReBIT: 43 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 43
+   FinFactor Extra: 0 ⭐
+
+📁 COLLECTIVE INVESTMENT SCHEMES
+   APIs: 0
+   ReBIT: 36 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 36
+   FinFactor Extra: 0 ⭐
+
+📁 COMMERCIAL PAPER
+   APIs: 0
+   ReBIT: 42 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 42
+   FinFactor Extra: 0 ⭐
+
+📁 CREDIT CARD
+   APIs: 0
+   ReBIT: 38 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 38
+   FinFactor Extra: 0 ⭐
+
+📁 DEBENTURES
+   APIs: 0
+   ReBIT: 45 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 45
+   FinFactor Extra: 0 ⭐
+
+📁 DEPOSIT
+   APIs: 1
+   ReBIT: 35 fields
+   FinFactor: 9 fields
+   Common: 1 (2.9%)
+   ReBIT Only: 34
+   FinFactor Extra: 8 ⭐
+
+📁 EMPLOYEE PROVIDENT FUND
+   APIs: 0
+   ReBIT: 31 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 31
+   FinFactor Extra: 0 ⭐
+
+📁 EQUITY SHARES
+   APIs: 3
+   ReBIT: 41 fields
+   FinFactor: 38 fields
+   Common: 7 (17.1%)
+   ReBIT Only: 34
+   FinFactor Extra: 31 ⭐
+
+📁 EXCHANGE TRADED FUNDS
+   APIs: 2
+   ReBIT: 36 fields
+   FinFactor: 36 fields
+   Common: 11 (30.6%)
+   ReBIT Only: 25
+   FinFactor Extra: 25 ⭐
+
+📁 GOVERNMENT SECURITIES
+   APIs: 0
+   ReBIT: 54 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 54
+   FinFactor Extra: 0 ⭐
+
+📁 INDIAN DEPOSITORY RECEIPTS
+   APIs: 0
+   ReBIT: 37 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 37
+   FinFactor Extra: 0 ⭐
+
+📁 INFRASTRUCTURE INVESTMENT TRUSTS
+   APIs: 0
+   ReBIT: 36 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 36
+   FinFactor Extra: 0 ⭐
+
+📁 INSURANCE POLICIES
+   APIs: 0
+   ReBIT: 47 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 47
+   FinFactor Extra: 0 ⭐
+
+📁 MUTUAL FUNDS
+   APIs: 3
+   ReBIT: 47 fields
+   FinFactor: 46 fields
+   Common: 16 (34.0%)
+   ReBIT Only: 31
+   FinFactor Extra: 30 ⭐
+
+📁 NATIONAL PENSION SYSTEM
+   APIs: 0
+   ReBIT: 49 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 49
+   FinFactor Extra: 0 ⭐
+
+📁 PUBLIC PROVIDENT FUND
+   APIs: 0
+   ReBIT: 28 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 28
+   FinFactor Extra: 0 ⭐
+
+📁 REAL ESTATE INVESTMENT TRUSTS
+   APIs: 0
+   ReBIT: 38 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 38
+   FinFactor Extra: 0 ⭐
+
+📁 RECURRING DEPOSIT
+   APIs: 1
+   ReBIT: 43 fields
+   FinFactor: 9 fields
+   Common: 1 (2.3%)
+   ReBIT Only: 42
+   FinFactor Extra: 8 ⭐
+
+📁 SYSTEMATIC INVESTMENT PLAN
+   APIs: 0
+   ReBIT: 49 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 49
+   FinFactor Extra: 0 ⭐
+
+📁 TERM DEPOSIT
+   APIs: 1
+   ReBIT: 41 fields
+   FinFactor: 9 fields
+   Common: 1 (2.4%)
+   ReBIT Only: 40
+   FinFactor Extra: 8 ⭐
+
+📁 UNIT LINKED INSURANCE PLAN
+   APIs: 0
+   ReBIT: 45 fields
+   FinFactor: 0 fields
+   Common: 0 (0.0%)
+   ReBIT Only: 45
+   FinFactor Extra: 0 ⭐
+
+================================================================================
+✅ DONE - All APIs parsed with complete field tracking!
+================================================================================

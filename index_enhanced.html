@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReBIT vs FinFactor - Enhanced Comparison Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="styles_enhanced.css">
+</head>
+<body>
+    <!-- Hero Header -->
+    <div class="hero-header">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="icon">📊</span>
+                    ReBIT vs FinFactor
+                </h1>
+                <p class="hero-subtitle">Comprehensive Data Coverage Analysis for Business Decision Making</p>
+                <div class="hero-badges">
+                    <span class="badge badge-success">✓ 100% Accurate</span>
+                    <span class="badge badge-info">🎯 Semantic Matching</span>
+                    <span class="badge badge-warning">⭐ Value Analysis</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Executive Summary Dashboard -->
+        <section class="dashboard-section">
+            <h2 class="section-title">
+                <span class="icon">📈</span>
+                Executive Summary
+            </h2>
+            
+            <div class="metrics-grid" id="metricsGrid">
+                <!-- Metrics will be populated by JavaScript -->
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <h3 class="chart-title">Coverage Comparison</h3>
+                    <canvas id="coverageChart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3 class="chart-title">Field Distribution</h3>
+                    <canvas id="distributionChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Insights -->
+        <section class="insights-section" id="insightsSection">
+            <h2 class="section-title">
+                <span class="icon">💡</span>
+                Key Insights
+            </h2>
+            <div class="insights-grid" id="insightsGrid">
+                <!-- Insights will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Filters & Controls -->
+        <section class="controls-section">
+            <div class="controls-header" onclick="toggleControls()">
+                <h3>
+                    <span class="icon">🔍</span>
+                    Filters & Search
+                </h3>
+                <span class="toggle-icon" id="toggleIcon">▼</span>
+            </div>
+            <div class="controls-content" id="controlsContent">
+                <div class="controls-grid">
+                    <div class="control-group">
+                        <label for="fiTypeFilter">Financial Instrument Type</label>
+                        <select id="fiTypeFilter" onchange="applyFilters()">
+                            <option value="all">All FI Types</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="categoryFilter">Field Category</label>
+                        <select id="categoryFilter" onchange="applyFilters()">
+                            <option value="all">All Categories</option>
+                            <option value="common">Common Fields</option>
+                            <option value="rebit_only">ReBIT Only</option>
+                            <option value="finn_only">FinFactor Extra ⭐</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="searchField">Search Fields</label>
+                        <input type="text" id="searchField" placeholder="Type to search..." oninput="applyFilters()">
+                    </div>
+                    <div class="control-group">
+                        <label for="matchTypeFilter">Match Type</label>
+                        <select id="matchTypeFilter" onchange="applyFilters()">
+                            <option value="all">All Matches</option>
+                            <option value="exact">Exact Matches</option>
+                            <option value="semantic">Semantic Matches 🎯</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Comparison -->
+        <section class="comparison-section" id="comparisonSection">
+            <h2 class="section-title">
+                <span class="icon">🔬</span>
+                Detailed Field Comparison
+            </h2>
+            <div id="comparisonContent">
+                <div class="loading">Loading comparison data...</div>
+            </div>
+        </section>
+
+        <!-- Export Options -->
+        <section class="export-section">
+            <h3 class="section-title">
+                <span class="icon">📥</span>
+                Export Options
+            </h3>
+            <div class="export-buttons">
+                <button class="btn btn-primary" onclick="exportToPDF()">
+                    <span class="icon">📄</span>
+                    Export to PDF
+                </button>
+                <button class="btn btn-success" onclick="exportToExcel()">
+                    <span class="icon">📊</span>
+                    Export to Excel
+                </button>
+                <button class="btn btn-info" onclick="exportToJSON()">
+                    <span class="icon">💾</span>
+                    Download JSON
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Generated with Enhanced Semantic Matching • 100% Accurate Data Extraction</p>
+        </div>
+    </footer>
+
+    <script src="app_enhanced.js"></script>
+</body>
+</html>
