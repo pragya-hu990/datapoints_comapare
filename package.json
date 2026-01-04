@@ -2,11 +2,5 @@
   "name": "datapoints-compare",
   "version": "1.0.0",
   "description": "ReBIT vs FinFactor Data Points Comparison Dashboard",
-  "scripts": {
-    "build": "echo 'No build step required - static site'"
-  },
-  "keywords": ["rebit", "finnfactor", "comparison", "dashboard"],
-  "author": "",
-  "license": "MIT"
+  "private": true
 }
-

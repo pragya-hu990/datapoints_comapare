@@ -1,28 +1,29 @@
+# Netlify Configuration - Minimal and Working
 [build]
   publish = "."
   command = ""
 
-[build.environment]
-  NODE_VERSION = "18"
-
+# Redirect all routes to index.html (SPA behavior)
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
+# Headers for JSON files
 [[headers]]
   for = "/*.json"
   [headers.values]
     Content-Type = "application/json; charset=utf-8"
     Access-Control-Allow-Origin = "*"
-    Cache-Control = "public, max-age=3600"
 
+# Headers for JavaScript files
 [[headers]]
   for = "/*.js"
   [headers.values]
     Content-Type = "application/javascript; charset=utf-8"
     Access-Control-Allow-Origin = "*"
 
+# Headers for CSS files
 [[headers]]
   for = "/*.css"
   [headers.values]
