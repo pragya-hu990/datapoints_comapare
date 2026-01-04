@@ -12,19 +12,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function loadComparisonData() {
     try {
-        const response = await fetch('comparison_100_percent.json');
+        // Try comparison_all_43_apis.json first (most complete), fallback to others
+        let dataFile = 'comparison_all_43_apis.json';
+        let response = await fetch(dataFile);
+        
         if (!response.ok) {
-            throw new Error('Failed to load comparison data');
+            // Try fallback files
+            const fallbacks = ['comparison_100_percent.json', 'comparison_comprehensive.json', 'comparison_data.json'];
+            for (const fallback of fallbacks) {
+                response = await fetch(fallback);
+                if (response.ok) {
+                    dataFile = fallback;
+                    break;
+                }
+            }
         }
+        
+        if (!response.ok) {
+            throw new Error(`Failed to load comparison data. Tried: comparison_all_43_apis.json and fallbacks`);
+        }
+        
         comparisonData = await response.json();
         initializeDashboard();
     } catch (error) {
         console.error('Error loading data:', error);
         document.body.innerHTML = `
-            <div style="text-align: center; padding: 4rem; color: white;">
-                <h2>Error Loading Data</h2>
-                <p>${error.message}</p>
-                <p>Please ensure comparison_all_43_apis.json exists in the same directory.</p>
+            <div style="text-align: center; padding: 4rem; color: white; background: #1a1a1a;">
+                <h2>⚠️ Error Loading Data</h2>
+                <p style="color: #ff6b6b;">${error.message}</p>
+                <p style="margin-top: 1rem;">Please ensure comparison_all_43_apis.json exists in the same directory.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #888;">Check browser console for more details.</p>
             </div>
         `;
     }

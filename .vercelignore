@@ -1,0 +1,11 @@
+__pycache__/
+*.py
+*.log
+*.md
+rebit-schemas/
+finfactor/
+postman.json
+*.pyc
+.DS_Store
+node_modules/
+
